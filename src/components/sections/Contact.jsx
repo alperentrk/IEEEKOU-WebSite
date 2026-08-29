@@ -21,6 +21,13 @@ export default function Contact() {
   function handleSubmit(e) {
     e.preventDefault()
     if (!form.name || !form.email || !form.message) return
+
+    const subject = `İletişim Formu: ${form.name}`
+    const body = `Gönderen: ${form.name} (${form.email})\n\n${form.message}`
+    window.location.href = `mailto:${site.email}?subject=${encodeURIComponent(
+      subject,
+    )}&body=${encodeURIComponent(body)}`
+
     setStatus('sent')
     setForm(initialForm)
   }
@@ -118,7 +125,8 @@ export default function Contact() {
 
             {status === 'sent' && (
               <p className="text-sm font-medium text-primary">
-                Mesajınız alındı, en kısa sürede dönüş yapacağız.
+                E-posta programınız mesaj içeriğiyle birlikte açıldı —
+                göndermek için oradan onaylamanız yeterli.
               </p>
             )}
           </form>

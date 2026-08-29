@@ -8,10 +8,9 @@
   },
   "socialLinks": [
     { "label": "Instagram", "href": "https://instagram.com/ieeekou", "icon": "instagram" },
-    { "label": "LinkedIn", "href": "https://linkedin.com/company/ieee-kou", "icon": "linkedin" },
-    { "label": "X", "href": "https://x.com/ieeekou", "icon": "twitter" },
-    { "label": "YouTube", "href": "https://youtube.com/@ieeekou", "icon": "youtube" },
-    { "label": "Medium", "href": "https://medium.com/@ieeekou", "icon": "medium" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/company/ieeekou/posts/?feedView=all", "icon": "linkedin" },
+    { "label": "X", "href": "https://x.com/IeeeKou", "icon": "twitter" },
+    { "label": "YouTube", "href": "https://www.youtube.com/@ieeekoutv5270", "icon": "youtube" },
     { "label": "E-posta", "href": "mailto:ieee.kou.sb@gmail.com", "icon": "mail" }
   ]
 }
