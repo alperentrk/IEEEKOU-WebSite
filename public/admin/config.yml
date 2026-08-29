@@ -1,0 +1,213 @@
+# Şimdilik yerel geliştirme için local_backend kullanılıyor (npm run cms).
+# Siteyi Netlify'a taşıdığınızda: local_backend satırını kaldırın,
+# Netlify Identity + Git Gateway'i etkinleştirin, backend.name "git-gateway" olarak kalabilir.
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "public/team"
+public_folder: "/team"
+
+collections:
+  - name: "board"
+    label: "Yönetim & İdari Kurul"
+    files:
+      - name: "board"
+        label: "Kurul Üyeleri"
+        file: "src/data/board.json"
+        fields:
+          - label: "Yönetim Kurulu"
+            name: "executiveBoard"
+            widget: "list"
+            summary: "{{name}} — {{title}}"
+            fields:
+              - { label: "Ad Soyad", name: "name", widget: "string" }
+              - { label: "Unvan", name: "title", widget: "string" }
+              - {
+                  label: "Baş Harfler (fotoğraf yoksa gösterilir)",
+                  name: "initials",
+                  widget: "string",
+                }
+              - {
+                  label: "Fotoğraf",
+                  name: "photo",
+                  widget: "image",
+                  required: false,
+                }
+          - label: "İdari Kurul & Komite Liderleri"
+            name: "administrativeBoard"
+            widget: "list"
+            summary: "{{name}} — {{title}}"
+            fields:
+              - { label: "Ad Soyad", name: "name", widget: "string" }
+              - { label: "Unvan", name: "title", widget: "string" }
+              - {
+                  label: "Baş Harfler (fotoğraf yoksa gösterilir)",
+                  name: "initials",
+                  widget: "string",
+                }
+              - {
+                  label: "Fotoğraf",
+                  name: "photo",
+                  widget: "image",
+                  required: false,
+                }
+
+  - name: "groups"
+    label: "Komiteler & Takımlar"
+    files:
+      - name: "groups"
+        label: "Komiteler & Teknik Takımlar"
+        file: "src/data/groups.json"
+        fields:
+          - label: "Teknik Takımlar"
+            name: "technicalTeams"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - { label: "Kısa Kod (slug)", name: "slug", widget: "string" }
+              - { label: "Takım Adı", name: "name", widget: "string" }
+              - { label: "Etiket", name: "tagline", widget: "string" }
+              - { label: "Açıklama", name: "description", widget: "text" }
+              - {
+                  label: "İkon",
+                  name: "icon",
+                  widget: "select",
+                  options: ["rover", "drone"],
+                }
+              - {
+                  label: "Web Sitesi (opsiyonel)",
+                  name: "url",
+                  widget: "string",
+                  required: false,
+                }
+          - label: "Komiteler"
+            name: "committees"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - { label: "Kısa Kod (slug)", name: "slug", widget: "string" }
+              - { label: "Kısa Ad", name: "name", widget: "string" }
+              - { label: "Tam Ad", name: "fullName", widget: "string" }
+              - { label: "Açıklama", name: "description", widget: "text" }
+              - {
+                  label: "İkon",
+                  name: "icon",
+                  widget: "select",
+                  options: ["satellite", "cpu", "zap"],
+                }
+              - {
+                  label: "Öncü Etkinlik",
+                  name: "flagshipEvent",
+                  widget: "string",
+                }
+
+  - name: "events"
+    label: "Etkinlikler"
+    files:
+      - name: "events"
+        label: "Etkinlik Listesi"
+        file: "src/data/events.json"
+        fields:
+          - label: "Etkinlikler"
+            name: "events"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - { label: "Kısa Kod (slug)", name: "slug", widget: "string" }
+              - { label: "Etkinlik Adı", name: "name", widget: "string" }
+              - { label: "Alt Başlık", name: "subtitle", widget: "string" }
+              - { label: "Düzenleyen", name: "organizer", widget: "string" }
+              - { label: "Açıklama", name: "description", widget: "text" }
+              - {
+                  label: "İkon",
+                  name: "icon",
+                  widget: "select",
+                  options: ["briefcase", "code", "zap", "satellite"],
+                }
+              - {
+                  label: "Amiral Etkinlik mi?",
+                  name: "flagship",
+                  widget: "boolean",
+                  default: false,
+                }
+
+  - name: "blog"
+    label: "Blog / Medium Yazıları"
+    files:
+      - name: "blog"
+        label: "Yazılar"
+        file: "src/data/blogPosts.json"
+        fields:
+          - label: "Yazılar"
+            name: "blogPosts"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Başlık", name: "title", widget: "string" }
+              - { label: "Özet", name: "excerpt", widget: "text" }
+              - { label: "Yazar", name: "author", widget: "string" }
+              - {
+                  label: "Tarih",
+                  name: "date",
+                  widget: "date",
+                  format: "YYYY-MM-DD",
+                }
+              - { label: "Etiket", name: "tag", widget: "string" }
+              - { label: "Medium Bağlantısı", name: "url", widget: "string" }
+
+  - name: "achievements"
+    label: "Projeler & Başarılar"
+    files:
+      - name: "achievements"
+        label: "Başarı Listesi"
+        file: "src/data/achievements.json"
+        fields:
+          - label: "Başarılar"
+            name: "achievements"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - {
+                  label: "Kategori",
+                  name: "category",
+                  widget: "select",
+                  options: ["TEKNOFEST", "TÜBİTAK", "Proje"],
+                }
+              - { label: "Başlık", name: "title", widget: "string" }
+              - { label: "Sonuç / Derece", name: "result", widget: "string" }
+              - { label: "Takım", name: "team", widget: "string" }
+              - { label: "Açıklama", name: "description", widget: "text" }
+
+  - name: "site"
+    label: "Site Bilgileri"
+    files:
+      - name: "site"
+        label: "Genel Bilgiler & Sosyal Medya"
+        file: "src/data/site.json"
+        fields:
+          - label: "Genel Bilgiler"
+            name: "site"
+            widget: "object"
+            fields:
+              - { label: "Kısa Ad", name: "shortName", widget: "string" }
+              - { label: "Tam Ad", name: "fullName", widget: "string" }
+              - { label: "Misyon", name: "mission", widget: "text" }
+              - { label: "E-posta", name: "email", widget: "string" }
+              - { label: "Adres", name: "location", widget: "string" }
+          - label: "Sosyal Medya Bağlantıları"
+            name: "socialLinks"
+            widget: "list"
+            summary: "{{label}}"
+            fields:
+              - { label: "Etiket", name: "label", widget: "string" }
+              - { label: "Bağlantı", name: "href", widget: "string" }
+              - {
+                  label: "İkon",
+                  name: "icon",
+                  widget: "select",
+                  options:
+                    ["instagram", "linkedin", "twitter", "youtube", "medium", "mail"],
+                }

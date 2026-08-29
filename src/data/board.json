@@ -1,0 +1,66 @@
+{
+  "executiveBoard": [
+    {
+      "name": "Alperen Türk",
+      "title": "Yönetim Kurulu Eş Başkanı",
+      "initials": "AT",
+      "photo": "/team/alperen-turk.jpg"
+    },
+    {
+      "name": "Selin Güler",
+      "title": "Yönetim Kurulu Eş Başkanı",
+      "initials": "SG",
+      "photo": "/team/selin-guler.jpg"
+    },
+    {
+      "name": "Furkan Akcan",
+      "title": "Yönetim Kurulu Başkan Yardımcısı",
+      "initials": "FA",
+      "photo": "/team/furkan-akcan.jpg"
+    },
+    {
+      "name": "Sadık Gölpek",
+      "title": "Yönetim Kurulu Finansal Koordinatör",
+      "initials": "SG",
+      "photo": "/team/sadik-golpek.jpg"
+    }
+  ],
+  "administrativeBoard": [
+    {
+      "name": "Meryem Akarsu",
+      "title": "AESS Komitesi Başkanı",
+      "initials": "MA",
+      "photo": "/team/meryem-akarsu.jpg"
+    },
+    {
+      "name": "Zeynep Demirel",
+      "title": "CS Komitesi Başkanı",
+      "initials": "ZD",
+      "photo": "/team/zeynep-demirel.jpg"
+    },
+    {
+      "name": "Mehmet Yasin Tanış",
+      "title": "PES Komitesi Başkanı",
+      "initials": "MT",
+      "photo": "/team/mehmet-yasin-tanis.jpg"
+    },
+    {
+      "name": "Dağhan Özdemir",
+      "title": "KÖK Kol Sorumlusu",
+      "initials": "DÖ",
+      "photo": "/team/daghan-ozdemir.jpg"
+    },
+    {
+      "name": "Sare Barbarus",
+      "title": "Tanıtım Koordinatörü",
+      "initials": "SB",
+      "photo": "/team/sare-barbarus.jpg"
+    },
+    {
+      "name": "Sena Şimşek",
+      "title": "15. PİTEK Günleri Koordinatörü",
+      "initials": "SŞ",
+      "photo": "/team/sena-simsek.jpg"
+    }
+  ]
+}

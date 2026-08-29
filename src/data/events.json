@@ -1,0 +1,40 @@
+{
+  "events": [
+    {
+      "slug": "pitek",
+      "name": "15. PİTEK Günleri",
+      "subtitle": "Profesyonel İş ve Teknoloji Günleri",
+      "organizer": "IEEE KOÜ",
+      "description": "Kulübümüzün bu yıl 15incisini gerçekleştirdiği en büyük geleneksel kariyer ve teknoloji zirvesi. Sektörün önde gelen firmalarını ve üst düzey yöneticilerini öğrencilerle buluşturur.",
+      "icon": "briefcase",
+      "flagship": true
+    },
+    {
+      "slug": "f5-days",
+      "name": "F5 Days",
+      "subtitle": "Yazılım & Teknoloji Etkinlik Serisi",
+      "organizer": "IEEE KOU Computer Society (CS)",
+      "description": "IEEE KOU Computer Society (CS) komitesi tarafından düzenlenen teknoloji ve yazılım odaklı etkinlik serisi.",
+      "icon": "code",
+      "flagship": false
+    },
+    {
+      "slug": "sektor-gunleri",
+      "name": "Sektör Günleri",
+      "subtitle": "Mesleki Gelişim Zirvesi",
+      "organizer": "IEEE KOU Power & Energy Society (PES)",
+      "description": "IEEE KOU PES komitesi altında elektrik, otomasyon, aydınlatma ve enerji sektörlerinin öncü firmalarını ve profesyonellerini öğrencilerle buluşturan geleneksel mesleki gelişim zirvesi.",
+      "icon": "zap",
+      "flagship": false
+    },
+    {
+      "slug": "def-sum",
+      "name": "DEF-SUM",
+      "subtitle": "Savunma Sanayii & Havacılık Zirvesi",
+      "organizer": "IEEE KOU Aerospace and Electronic Systems Society (AESS)",
+      "description": "IEEE KOU AESS komitesinin önde gelen salon etkinliklerinden biri. Savunma sanayi, havacılık ve ileri teknoloji odaklı projeleri, sektörün önemli isimlerini öğrencilerle buluşturan ana organizasyonlarımızdan biri.",
+      "icon": "satellite",
+      "flagship": false
+    }
+  ]
+}

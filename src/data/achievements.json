@@ -1,0 +1,32 @@
+{
+  "achievements": [
+    {
+      "category": "TEKNOFEST",
+      "title": "TEKNOFEST İnsansız Hava Aracı Yarışması",
+      "result": "Finalist",
+      "team": "IEEE KOU Technic İHA",
+      "description": "Teknofest kapsamında geliştirilen otonom görev senaryolarıyla finale kalan İHA projemiz."
+    },
+    {
+      "category": "TEKNOFEST",
+      "title": "TEKNOFEST Roket & Rover Kategorisi",
+      "result": "Türkiye Derecesi",
+      "team": "IEEE KOU Rover Team",
+      "description": "Otonom rover platformumuzla ulusal yarışmada dereceye giren proje çalışmamız."
+    },
+    {
+      "category": "TÜBİTAK",
+      "title": "TÜBİTAK 2209-A Araştırma Projesi Desteği",
+      "result": "Kabul Edildi",
+      "team": "IEEE KOÜ Üyeleri",
+      "description": "Öğrenci üyelerimizin hazırladığı araştırma projesi TÜBİTAK tarafından desteklenmeye değer bulundu."
+    },
+    {
+      "category": "Proje",
+      "title": "Akıllı Enerji İzleme Sistemi",
+      "result": "Kulüp İçi Proje",
+      "team": "IEEE KOU PES",
+      "description": "PES komitemiz tarafından geliştirilen, gerçek zamanlı enerji tüketimini izleyen IoT tabanlı sistem."
+    }
+  ]
+}

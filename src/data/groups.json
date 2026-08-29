@@ -1,0 +1,46 @@
+{
+  "technicalTeams": [
+    {
+      "slug": "rover",
+      "name": "IEEE KOU Rover Team",
+      "tagline": "Robotik & Rover",
+      "description": "Robotik ve rover projeleri geliştiren teknik takımımız.",
+      "icon": "rover",
+      "url": ""
+    },
+    {
+      "slug": "iha",
+      "name": "IEEE KOU Technic İHA",
+      "tagline": "İnsansız Hava Araçları",
+      "description": "İnsansız hava araçları üzerine çalışmalar yapan teknoloji takımı.",
+      "icon": "drone",
+      "url": ""
+    }
+  ],
+  "committees": [
+    {
+      "slug": "aess",
+      "name": "IEEE AESS",
+      "fullName": "Aerospace and Electronic Systems Society",
+      "description": "Uzay ve havacılık sistemleri, elektronik sistemler, radar, aviyonik, navigasyon ve kablosuz haberleşme gibi ileri teknoloji alanlarında faaliyet gösteren komitemiz.",
+      "icon": "satellite",
+      "flagshipEvent": "DEF-SUM"
+    },
+    {
+      "slug": "cs",
+      "name": "IEEE CS",
+      "fullName": "Computer Society",
+      "description": "Yazılım ve teknoloji odaklı çalışmalar yapan komitemiz.",
+      "icon": "cpu",
+      "flagshipEvent": "F5 Days"
+    },
+    {
+      "slug": "pes",
+      "name": "IEEE PES",
+      "fullName": "Power & Energy Society",
+      "description": "Elektrik, güç ve enerji sistemleri üzerine odaklanan komitemiz.",
+      "icon": "zap",
+      "flagshipEvent": "Sektör Günleri"
+    }
+  ]
+}

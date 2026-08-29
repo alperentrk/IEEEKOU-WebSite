@@ -1,0 +1,36 @@
+{
+  "blogPosts": [
+    {
+      "title": "IEEE Öğrenci Kolu Olarak Bir Yılı Geride Bırakırken",
+      "excerpt": "IEEE KOÜ olarak düzenlediğimiz etkinlikler, katıldığımız yarışmalar ve öğrendiklerimiz üzerine bir değerlendirme yazısı.",
+      "author": "Alperen Türk",
+      "date": "2026-05-12",
+      "tag": "Topluluk",
+      "url": "https://medium.com/@ieeekou"
+    },
+    {
+      "title": "Rover Takımı Gözünden Otonom Navigasyonun Temelleri",
+      "excerpt": "IEEE KOU Rover Team olarak geliştirdiğimiz aracın sensör füzyonu ve yol planlama yaklaşımını anlatıyoruz.",
+      "author": "IEEE KOU Rover Team",
+      "date": "2026-04-03",
+      "tag": "Robotik",
+      "url": "https://medium.com/@ieeekou"
+    },
+    {
+      "title": "İHA Yazılımında Uçuş Kontrolcüsü Seçimi: Neden Pixhawk?",
+      "excerpt": "Technic İHA takımımızın uçuş kontrol kartı seçim sürecini ve karşılaştırdığı kriterleri paylaşıyoruz.",
+      "author": "IEEE KOU Technic İHA",
+      "date": "2026-03-18",
+      "tag": "Havacılık",
+      "url": "https://medium.com/@ieeekou"
+    },
+    {
+      "title": "F5 Days Ardından: Yazılım Kariyerine Dair Aldığımız Notlar",
+      "excerpt": "CS komitemizin düzenlediği F5 Days etkinliğinde sektör profesyonellerinden aldığımız kariyer tavsiyelerini derledik.",
+      "author": "IEEE KOU Computer Society",
+      "date": "2026-02-27",
+      "tag": "Kariyer",
+      "url": "https://medium.com/@ieeekou"
+    }
+  ]
+}
