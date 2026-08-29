@@ -26,19 +26,8 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  @theme {
-    --color-paper: #14161a;
-    --color-paper-soft: #1b1e24;
-    --color-line: #333844;
-    --color-ink: #ece9e1;
-    --color-ink-dim: #9aa1af;
-    --color-primary: #6d94ff;
-    --color-primary-dim: #4d76e6;
-  }
-}
-
 html {
+  color-scheme: light;
   scroll-behavior: smooth;
 }
 
