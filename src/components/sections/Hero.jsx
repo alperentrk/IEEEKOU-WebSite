@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 const stats = [
   ['15.', 'PİTEK Günleri'],
   ['3', 'Aktif Komite'],
@@ -33,12 +31,12 @@ export default function Hero() {
           >
             Komitelerimizi Keşfet
           </a>
-          <Link
-            to="/iletisim"
+          <a
+            href="#iletisim"
             className="border border-ink px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-ink hover:text-paper"
           >
             Bize Katıl
-          </Link>
+          </a>
         </div>
       </div>
 

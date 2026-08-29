@@ -5,5 +5,5 @@ export const navLinks = [
   { label: 'Etkinlikler', to: '/#etkinlikler' },
   { label: 'Yayınlar', to: '/blog' },
   { label: 'Projeler', to: '/#projeler' },
-  { label: 'İletişim', to: '/iletisim' },
+  { label: 'İletişim', to: '/#iletisim' },
 ]

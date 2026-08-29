@@ -4,7 +4,8 @@
     "fullName": "Kocaeli Üniversitesi IEEE Öğrenci Kolu",
     "mission": "Mühendislik ve teknoloji alanlarında öğrencilerin akademik, teknik ve kariyer gelişimini desteklemek; sektörel buluşmalar ve projeler üretmek.",
     "email": "ieee.kou.sb@gmail.com",
-    "location": "Kocaeli Üniversitesi, Umuttepe Kampüsü, İzmit / Kocaeli"
+    "location": "Kocaeli Üniversitesi, Umuttepe Kampüsü, İzmit / Kocaeli",
+    "brochureUrl": "/docs/ieee-kou-tanitim.pdf"
   },
   "socialLinks": [
     { "label": "Instagram", "href": "https://instagram.com/ieeekou", "icon": "instagram" },

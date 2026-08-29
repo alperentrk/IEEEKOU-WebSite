@@ -197,6 +197,14 @@ collections:
               - { label: "Misyon", name: "mission", widget: "text" }
               - { label: "E-posta", name: "email", widget: "string" }
               - { label: "Adres", name: "location", widget: "string" }
+              - {
+                  label: "Kulüp Tanıtım Dosyası (PDF)",
+                  name: "brochureUrl",
+                  widget: "file",
+                  media_folder: "public/docs",
+                  public_folder: "/docs",
+                  required: false,
+                }
           - label: "Sosyal Medya Bağlantıları"
             name: "socialLinks"
             widget: "list"

@@ -4,7 +4,6 @@ import Footer from './components/Footer'
 import ScrollToHash from './components/ScrollToHash'
 import Home from './pages/Home'
 import BlogPage from './pages/BlogPage'
-import ContactPage from './pages/ContactPage'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<BlogPage />} />
-          <Route path="/iletisim" element={<ContactPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

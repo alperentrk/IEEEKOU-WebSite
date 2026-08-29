@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Send } from 'lucide-react'
+import { Download, Send } from 'lucide-react'
 import BrandIcon from '../BrandIcon'
 import SectionHeading from '../SectionHeading'
 import { site, socialLinks } from '../../data/site.json'
@@ -74,6 +74,19 @@ export default function Contact() {
                 ))}
               </div>
             </div>
+            {site.brochureUrl && (
+              <div>
+                <h3 className="kicker mb-3">Kulüp Tanıtım Dosyası</h3>
+                <a
+                  href={site.brochureUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 border border-ink px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:bg-ink hover:text-paper"
+                >
+                  <Download size={16} /> PDF Olarak İndir
+                </a>
+              </div>
+            )}
           </div>
 
           <form onSubmit={handleSubmit} className="flex flex-col gap-8">
