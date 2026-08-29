@@ -26,12 +26,12 @@ export default function Events() {
                   {event.name}
                 </h3>
                 {event.flagship && (
-                  <span className="kicker border border-primary px-2 py-0.5 text-primary">
+                  <span className="kicker border border-accent px-2 py-0.5 text-accent">
                     Amiral Etkinlik
                   </span>
                 )}
               </div>
-              <p className="kicker mt-2 text-primary">{event.subtitle}</p>
+              <p className="kicker mt-2 text-accent">{event.subtitle}</p>
             </div>
             <div>
               <p className="text-sm leading-relaxed text-ink-dim">

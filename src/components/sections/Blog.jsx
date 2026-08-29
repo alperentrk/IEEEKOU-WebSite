@@ -32,7 +32,7 @@ export default function Blog({ limit, showAllLink = true }) {
               className="group grid grid-cols-1 gap-3 border-t border-line py-8 first:border-t-0 sm:grid-cols-[1fr_auto] sm:items-center sm:gap-8"
             >
               <div>
-                <span className="kicker text-primary">{post.tag}</span>
+                <span className="kicker text-accent">{post.tag}</span>
                 <h3 className="mt-2 font-display text-xl font-semibold leading-snug text-ink sm:text-2xl">
                   {post.title}
                 </h3>
@@ -45,7 +45,7 @@ export default function Blog({ limit, showAllLink = true }) {
               </div>
               <ArrowUpRight
                 size={22}
-                className="hidden text-ink-dim transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-primary sm:block"
+                className="hidden text-ink-dim transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-accent sm:block"
               />
             </a>
           ))}
@@ -55,7 +55,7 @@ export default function Blog({ limit, showAllLink = true }) {
           <div className="mt-10">
             <Link
               to="/blog"
-              className="kicker text-ink underline decoration-primary decoration-2 underline-offset-4 hover:text-primary"
+              className="kicker text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-accent"
             >
               Tüm Yazıları Gör →
             </Link>

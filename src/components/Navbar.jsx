@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
+import ThemeToggle from './ThemeToggle'
 import { navLinks } from '../data/navLinks'
 import { site } from '../data/site.json'
 
@@ -8,59 +9,67 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-paper">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+    <header className="sticky top-0 z-50 border-b border-mast-line bg-mast">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link to="/" className="flex flex-col leading-none">
-          <span className="font-display text-2xl font-semibold tracking-tight text-ink">
+          <span className="font-display text-2xl font-semibold tracking-tight text-mast-text">
             {site.shortName}
           </span>
-          <span className="kicker mt-1">Kocaeli Üniversitesi</span>
+          <span className="mt-1 text-[11px] font-semibold uppercase tracking-widest text-mast-text-dim">
+            Kocaeli Üniversitesi
+          </span>
         </Link>
 
-        <nav className="hidden items-center gap-8 lg:flex">
+        <nav className="hidden items-center gap-7 lg:flex">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
               to={link.to}
-              className="kicker text-ink-dim decoration-primary decoration-2 underline-offset-4 transition-colors hover:text-ink hover:underline"
+              className="text-xs font-semibold uppercase tracking-widest text-mast-text-dim decoration-2 underline-offset-4 transition-colors hover:text-mast-text hover:underline"
             >
               {link.label}
             </NavLink>
           ))}
         </nav>
 
-        <a
-          href="mailto:ieee.kou.sb@gmail.com"
-          className="kicker hidden border border-ink px-5 py-2.5 text-ink transition-colors hover:bg-ink hover:text-paper lg:inline-flex"
-        >
-          Bize Katıl
-        </a>
+        <div className="hidden items-center gap-3 lg:flex">
+          <ThemeToggle className="border-mast-line text-mast-text hover:bg-mast-line" />
+          <a
+            href="mailto:ieee.kou.sb@gmail.com"
+            className="bg-primary px-5 py-2.5 text-xs font-semibold uppercase tracking-widest text-white transition-colors hover:bg-primary-dim"
+          >
+            Bize Katıl
+          </a>
+        </div>
 
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          className="inline-flex h-10 w-10 items-center justify-center border border-line text-ink lg:hidden"
-          aria-label="Menüyü aç/kapat"
-        >
-          {open ? <X size={18} /> : <Menu size={18} />}
-        </button>
+        <div className="flex items-center gap-2 lg:hidden">
+          <ThemeToggle className="border-mast-line text-mast-text" />
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            className="inline-flex h-10 w-10 items-center justify-center border border-mast-line text-mast-text"
+            aria-label="Menüyü aç/kapat"
+          >
+            {open ? <X size={18} /> : <Menu size={18} />}
+          </button>
+        </div>
       </div>
 
       {open && (
-        <nav className="flex flex-col border-t border-line bg-paper px-6 py-2 lg:hidden">
+        <nav className="flex flex-col border-t border-mast-line bg-mast px-6 py-2 lg:hidden">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
               to={link.to}
               onClick={() => setOpen(false)}
-              className="border-b border-line py-4 text-sm font-medium text-ink-dim last:border-none hover:text-ink"
+              className="border-b border-mast-line py-4 text-sm font-medium text-mast-text-dim last:border-none hover:text-mast-text"
             >
               {link.label}
             </NavLink>
           ))}
           <a
             href="mailto:ieee.kou.sb@gmail.com"
-            className="kicker my-4 border border-ink px-5 py-3 text-center text-ink"
+            className="my-4 bg-primary px-5 py-3 text-center text-xs font-semibold uppercase tracking-widest text-white"
           >
             Bize Katıl
           </a>

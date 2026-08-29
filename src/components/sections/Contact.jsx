@@ -7,7 +7,7 @@ import { site, socialLinks } from '../../data/site.json'
 const initialForm = { name: '', email: '', message: '' }
 
 const fieldClass =
-  'w-full border-0 border-b border-line bg-transparent py-3 text-base text-ink outline-none transition-colors placeholder:text-ink-dim/60 focus:border-primary'
+  'w-full border-0 border-b border-line bg-transparent py-3 text-base text-ink outline-none transition-colors placeholder:text-ink-dim/60 focus:border-accent'
 
 export default function Contact() {
   const [form, setForm] = useState(initialForm)
@@ -52,7 +52,7 @@ export default function Contact() {
               <h3 className="kicker mb-2">E-posta</h3>
               <a
                 href={`mailto:${site.email}`}
-                className="text-sm text-ink underline decoration-primary underline-offset-4"
+                className="text-sm text-ink underline decoration-accent underline-offset-4"
               >
                 {site.email}
               </a>
@@ -67,7 +67,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label={s.label}
-                    className="text-ink-dim transition-colors hover:text-primary"
+                    className="text-ink-dim transition-colors hover:text-accent"
                   >
                     <BrandIcon name={s.icon} size={18} />
                   </a>
@@ -124,7 +124,7 @@ export default function Contact() {
             </button>
 
             {status === 'sent' && (
-              <p className="text-sm font-medium text-primary">
+              <p className="text-sm font-medium text-accent">
                 E-posta programınız mesaj içeriğiyle birlikte açıldı —
                 göndermek için oradan onaylamanız yeterli.
               </p>

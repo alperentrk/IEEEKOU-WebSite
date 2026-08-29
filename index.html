@@ -15,6 +15,16 @@
       rel="stylesheet"
     />
     <title>IEEE KOÜ | Kocaeli Üniversitesi IEEE Öğrenci Kolu</title>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('ieee-kou-theme')
+          var theme =
+            stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+          document.documentElement.setAttribute('data-theme', theme)
+        } catch (e) {}
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>

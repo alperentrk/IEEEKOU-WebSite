@@ -19,7 +19,7 @@ function Row({ n, title, tagline, description, url }) {
           <h3 className="font-display text-xl font-semibold text-ink sm:text-2xl">
             {title}
           </h3>
-          {tagline && <span className="kicker text-primary">{tagline}</span>}
+          {tagline && <span className="kicker text-accent">{tagline}</span>}
         </div>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-ink-dim">
           {description}
@@ -28,7 +28,7 @@ function Row({ n, title, tagline, description, url }) {
       {url && (
         <ArrowUpRight
           size={22}
-          className="hidden text-ink-dim transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-primary sm:block"
+          className="hidden text-ink-dim transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-accent sm:block"
         />
       )}
     </Wrapper>

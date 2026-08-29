@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section className="mx-auto max-w-6xl px-6 pb-16 pt-16 sm:pt-24">
       <div className="animate-rise kicker mb-8 flex items-center gap-3">
-        <span className="h-px w-8 bg-primary" />
+        <span className="h-px w-8 bg-accent" />
         Kocaeli Üniversitesi IEEE Öğrenci Kolu
       </div>
 
@@ -29,15 +29,15 @@ export default function Hero() {
         <div className="animate-rise flex flex-wrap gap-4">
           <a
             href="#komiteler"
-            className="border border-ink px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-ink hover:text-paper"
+            className="bg-primary px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary-dim"
           >
             Komitelerimizi Keşfet
           </a>
           <Link
             to="/iletisim"
-            className="border border-transparent px-6 py-3 text-sm font-semibold text-primary underline decoration-2 underline-offset-4 hover:text-ink"
+            className="border border-ink px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-ink hover:text-paper"
           >
-            Bize Katıl →
+            Bize Katıl
           </Link>
         </div>
       </div>

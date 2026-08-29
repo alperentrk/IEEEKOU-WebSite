@@ -20,7 +20,7 @@ export default function Achievements() {
             }`}
           >
             <div className="flex items-baseline justify-between">
-              <span className="kicker text-primary">{item.category}</span>
+              <span className="kicker text-accent">{item.category}</span>
               <span className="font-display text-sm text-ink-dim">
                 {String(i + 1).padStart(2, '0')}
               </span>

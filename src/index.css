@@ -1,13 +1,25 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-paper: #f6f3ec;
-  --color-paper-soft: #eeeadf;
-  --color-line: #d8d2c2;
-  --color-ink: #16181c;
-  --color-ink-dim: #5c6270;
-  --color-primary: #1449c4;
-  --color-primary-dim: #3a63c9;
+  /* Adaptive content surface (flips with data-theme) */
+  --color-paper: #ffffff;
+  --color-paper-soft: #eef3f8;
+  --color-line: #dce4ec;
+  --color-ink: #101b26;
+  --color-ink-dim: #55697c;
+
+  /* IEEE brand blue — constant, used for solid-fill buttons/badges (always paired with white text) */
+  --color-primary: #00629b;
+  --color-primary-dim: #004b78;
+
+  /* Adaptive blue used as standalone text/underline/border color (flips for dark-mode contrast) */
+  --color-accent: #00629b;
+
+  /* Fixed navy masthead used for header & footer in both modes */
+  --color-mast: #041c2c;
+  --color-mast-line: #17324a;
+  --color-mast-text: #f3f7fb;
+  --color-mast-text-dim: #93a9bc;
 
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-display: 'Fraunces', 'Georgia', serif;
@@ -26,9 +38,22 @@
   }
 }
 
+:root[data-theme='dark'] {
+  --color-paper: #0b141d;
+  --color-paper-soft: #121f2b;
+  --color-line: #223140;
+  --color-ink: #edf2f6;
+  --color-ink-dim: #93a4b3;
+  --color-accent: #5fb0e6;
+}
+
 html {
   color-scheme: light;
   scroll-behavior: smooth;
+}
+
+html[data-theme='dark'] {
+  color-scheme: dark;
 }
 
 body {
@@ -37,20 +62,17 @@ body {
   color: var(--color-ink);
   font-family: var(--font-sans);
   font-feature-settings: 'ss01' on;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 ::selection {
   background: var(--color-primary);
-  color: var(--color-paper);
+  color: #fff;
 }
 
 .font-display {
   font-family: var(--font-display);
   font-optical-sizing: auto;
-}
-
-.rule {
-  border-top: 1px solid var(--color-line);
 }
 
 .kicker {
