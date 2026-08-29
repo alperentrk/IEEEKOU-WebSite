@@ -11,6 +11,49 @@ media_folder: "public/team"
 public_folder: "/team"
 
 collections:
+  - name: "home"
+    label: "Ana Sayfa"
+    files:
+      - name: "home"
+        label: "Giriş (Hero) & Misyon Kartları"
+        file: "src/data/home.json"
+        fields:
+          - label: "Giriş Alanı (Hero)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {
+                  label: "Üst Etiket",
+                  name: "kicker",
+                  widget: "string",
+                }
+              - { label: "Ana Başlık", name: "headline", widget: "text" }
+              - { label: "Paragraf", name: "paragraph", widget: "text" }
+              - {
+                  label: "Birincil Buton Yazısı",
+                  name: "primaryButtonLabel",
+                  widget: "string",
+                }
+              - {
+                  label: "İkincil Buton Yazısı",
+                  name: "secondaryButtonLabel",
+                  widget: "string",
+                }
+              - label: "İstatistikler"
+                name: "stats"
+                widget: "list"
+                summary: "{{value}} — {{label}}"
+                fields:
+                  - { label: "Değer", name: "value", widget: "string" }
+                  - { label: "Etiket", name: "label", widget: "string" }
+          - label: "Misyon Kartları (3 Kutu)"
+            name: "aboutPillars"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Başlık", name: "title", widget: "string" }
+              - { label: "Açıklama", name: "text", widget: "text" }
+
   - name: "board"
     label: "Yönetim & İdari Kurul"
     files:

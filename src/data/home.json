@@ -1,0 +1,29 @@
+{
+  "hero": {
+    "kicker": "Kocaeli Üniversitesi IEEE Öğrenci Kolu",
+    "headline": "Mühendisliğin geleceğini birlikte inşa ediyoruz.",
+    "paragraph": "Mühendislik ve teknoloji alanlarında öğrencilerin akademik, teknik ve kariyer gelişimini destekliyor; sektörel buluşmalar ve projeler üretiyoruz.",
+    "primaryButtonLabel": "Komitelerimizi Keşfet",
+    "secondaryButtonLabel": "Bize Katıl",
+    "stats": [
+      { "value": "15.", "label": "PİTEK Günleri" },
+      { "value": "3", "label": "Aktif Komite" },
+      { "value": "2", "label": "Teknik Takım" },
+      { "value": "1000+", "label": "Topluluk Üyesi" }
+    ]
+  },
+  "aboutPillars": [
+    {
+      "title": "Akademik Gelişim",
+      "text": "Teknik atölyeler, eğitimler ve akademik projelerle üyelerimizin bilgi birikimini derinleştiriyoruz."
+    },
+    {
+      "title": "Teknik Üretim",
+      "text": "Rover, İHA ve yazılım projeleriyle fikirlerimizi somut ürünlere dönüştürüyoruz."
+    },
+    {
+      "title": "Sektörel Bağlantı",
+      "text": "PİTEK, F5 Days, Sektör Günleri ve DEF-SUM gibi etkinliklerle sektörü öğrencilerle buluşturuyoruz."
+    }
+  ]
+}

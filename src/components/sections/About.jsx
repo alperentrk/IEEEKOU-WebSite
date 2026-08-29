@@ -1,22 +1,5 @@
 import { site } from '../../data/site.json'
-
-const pillars = [
-  {
-    n: '01',
-    title: 'Akademik Gelişim',
-    text: 'Teknik atölyeler, eğitimler ve akademik projelerle üyelerimizin bilgi birikimini derinleştiriyoruz.',
-  },
-  {
-    n: '02',
-    title: 'Teknik Üretim',
-    text: 'Rover, İHA ve yazılım projeleriyle fikirlerimizi somut ürünlere dönüştürüyoruz.',
-  },
-  {
-    n: '03',
-    title: 'Sektörel Bağlantı',
-    text: 'PİTEK, F5 Days, Sektör Günleri ve DEF-SUM gibi etkinliklerle sektörü öğrencilerle buluşturuyoruz.',
-  },
-]
+import { aboutPillars } from '../../data/home.json'
 
 export default function About() {
   return (
@@ -34,12 +17,14 @@ export default function About() {
           </div>
 
           <div>
-            {pillars.map((p) => (
+            {aboutPillars.map((p, i) => (
               <div
-                key={p.n}
+                key={p.title}
                 className="grid grid-cols-[3rem_1fr] gap-6 border-t border-line py-7 first:border-t-0 lg:grid-cols-[4rem_1fr]"
               >
-                <span className="font-display text-2xl text-ink-dim">{p.n}</span>
+                <span className="font-display text-2xl text-ink-dim">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
                 <div>
                   <h3 className="font-display text-lg font-semibold text-ink">
                     {p.title}
