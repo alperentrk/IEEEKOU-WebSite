@@ -17,36 +17,36 @@ export default function Blog({ limit, showAllLink = true }) {
       <div className="mx-auto max-w-6xl px-6 py-24">
         <SectionHeading
           eyebrow="Medium Yazılarımız"
-          title="Blog / Medium Yazıları"
+          title="Yayınlar"
           subtitle="Üyelerimizin teknik ve sektörel deneyimlerini paylaştığı Medium yazılarımızdan seçkiler."
           index="05"
         />
 
-        <div className="mt-4">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2">
           {posts.map((post) => (
             <a
               key={post.title}
               href={post.url}
               target="_blank"
               rel="noreferrer"
-              className="group grid grid-cols-1 gap-3 border-t border-line py-8 first:border-t-0 sm:grid-cols-[1fr_auto] sm:items-center sm:gap-8"
+              className="group flex flex-col gap-4 border border-line bg-paper p-7 transition-colors hover:border-accent"
             >
-              <div>
+              <div className="flex items-center justify-between">
                 <span className="kicker text-accent">{post.tag}</span>
-                <h3 className="mt-2 font-display text-xl font-semibold leading-snug text-ink sm:text-2xl">
-                  {post.title}
-                </h3>
-                <p className="mt-2 max-w-2xl text-sm leading-relaxed text-ink-dim">
-                  {post.excerpt}
-                </p>
-                <p className="mt-3 text-xs font-semibold text-ink-dim">
-                  {post.author} — {dateFormatter.format(new Date(post.date))}
-                </p>
+                <ArrowUpRight
+                  size={18}
+                  className="text-ink-dim transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-accent"
+                />
               </div>
-              <ArrowUpRight
-                size={22}
-                className="hidden text-ink-dim transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-accent sm:block"
-              />
+              <h3 className="font-display text-xl font-semibold leading-snug text-ink">
+                {post.title}
+              </h3>
+              <p className="line-clamp-3 text-sm leading-relaxed text-ink-dim">
+                {post.excerpt}
+              </p>
+              <p className="mt-auto border-t border-line pt-4 text-xs font-semibold text-ink-dim">
+                {post.author} — {dateFormatter.format(new Date(post.date))}
+              </p>
             </a>
           ))}
         </div>

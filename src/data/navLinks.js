@@ -3,7 +3,7 @@ export const navLinks = [
   { label: 'Kurulumuz', to: '/#kurulumuz' },
   { label: 'Komiteler', to: '/#komiteler' },
   { label: 'Etkinlikler', to: '/#etkinlikler' },
-  { label: 'Blog', to: '/blog' },
+  { label: 'Yayınlar', to: '/blog' },
   { label: 'Projeler', to: '/#projeler' },
   { label: 'İletişim', to: '/iletisim' },
 ]
