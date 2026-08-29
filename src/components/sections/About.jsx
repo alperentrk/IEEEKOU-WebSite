@@ -1,5 +1,6 @@
 import about from '../../data/about.json'
 import { aboutPillars } from '../../data/home.json'
+import { site } from '../../data/site.json'
 
 export default function About() {
   const paragraphs = about.story.split(/\n\s*\n/)
@@ -12,7 +13,10 @@ export default function About() {
           <h2 className="mt-5 font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
             {about.title}
           </h2>
-          <p className="mt-5 text-lg leading-relaxed text-ink-dim">{about.intro}</p>
+          <p className="mt-6 border-l-2 border-accent pl-4 font-display text-xl italic leading-snug text-ink">
+            {site.mission}
+          </p>
+          <p className="mt-6 text-lg leading-relaxed text-ink-dim">{about.intro}</p>
           <div className="mt-6 space-y-4">
             {paragraphs.map((paragraph, i) => (
               <p key={i} className="text-base leading-relaxed text-ink-dim">
