@@ -22,7 +22,9 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mt-16 grid border-t border-line sm:grid-cols-3">
+        <span className="kicker mt-16 block">Odak Alanlarımız</span>
+
+        <div className="mt-6 grid border-t border-line sm:grid-cols-3">
           {aboutPillars.map((p, i) => (
             <div
               key={p.title}
