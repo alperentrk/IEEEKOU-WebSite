@@ -11,6 +11,22 @@ media_folder: "public/team"
 public_folder: "/team"
 
 collections:
+  - name: "about"
+    label: "Hakkımızda Sayfası"
+    files:
+      - name: "about"
+        label: "Hakkımızda İçeriği"
+        file: "src/data/about.json"
+        fields:
+          - { label: "Üst Etiket", name: "kicker", widget: "string" }
+          - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "Giriş Cümlesi", name: "intro", widget: "text" }
+          - {
+              label: "Hikaye Metni (paragraflar arasına boş satır bırakın)",
+              name: "story",
+              widget: "text",
+            }
+
   - name: "home"
     label: "Ana Sayfa"
     files:

@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom'
 import { site } from '../../data/site.json'
 import { aboutPillars } from '../../data/home.json'
 
 export default function About() {
   return (
-    <section id="hakkimizda" className="border-t border-line bg-paper-soft">
+    <section id="misyon" className="border-t border-line bg-paper-soft">
       <div className="mx-auto max-w-6xl px-6 py-24">
         <div className="grid gap-16 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
@@ -14,6 +15,12 @@ export default function About() {
             <p className="mt-5 max-w-sm text-base leading-relaxed text-ink-dim">
               {site.mission}
             </p>
+            <Link
+              to="/hakkimizda"
+              className="kicker mt-6 inline-block text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-accent"
+            >
+              Hikayemizi Okuyun →
+            </Link>
           </div>
 
           <div>

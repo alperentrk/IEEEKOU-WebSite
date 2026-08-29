@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollToHash from './components/ScrollToHash'
 import Home from './pages/Home'
+import AboutPage from './pages/AboutPage'
 import BlogPage from './pages/BlogPage'
 import NotFound from './pages/NotFound'
 
@@ -14,6 +15,7 @@ function App() {
       <main className="flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/hakkimizda" element={<AboutPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

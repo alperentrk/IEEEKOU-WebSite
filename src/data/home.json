@@ -6,10 +6,22 @@
     "primaryButtonLabel": "Komitelerimizi Keşfet",
     "secondaryButtonLabel": "Bize Katıl",
     "stats": [
-      { "value": "15.", "label": "PİTEK Günleri" },
-      { "value": "3", "label": "Aktif Komite" },
-      { "value": "2", "label": "Teknik Takım" },
-      { "value": "1000+", "label": "Topluluk Üyesi" }
+      {
+        "value": "15.",
+        "label": "PİTEK Günleri"
+      },
+      {
+        "value": "6",
+        "label": "Aktif Komite"
+      },
+      {
+        "value": "2",
+        "label": "Teknik Takım"
+      },
+      {
+        "value": "1000+",
+        "label": "Topluluk Üyesi"
+      }
     ]
   },
   "aboutPillars": [

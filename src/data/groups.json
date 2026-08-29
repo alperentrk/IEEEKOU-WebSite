@@ -41,6 +41,30 @@
       "description": "Elektrik, güç ve enerji sistemleri üzerine odaklanan komitemiz.",
       "icon": "zap",
       "flagshipEvent": "Sektör Günleri"
+    },
+    {
+      "slug": "kök",
+      "name": "IEEE KÖK",
+      "fullName": "Kardeş Öğrenci Kolları",
+      "description": "Sosyallik ",
+      "flagshipEvent": "Geleneksel Tanışma Galası",
+      "icon": "cpu"
+    },
+    {
+      "slug": "ttk",
+      "name": "TTK",
+      "fullName": "Tanıtım&Tasarım Komitesi",
+      "description": "tasarım",
+      "icon": "satellite",
+      "flagshipEvent": "post"
+    },
+    {
+      "slug": "pitek",
+      "name": "IEEE PİTEK",
+      "fullName": "Profesyonel İş ve Teknoloji Günleri",
+      "description": "pitek",
+      "flagshipEvent": "15. PİTEK",
+      "icon": "cpu"
     }
   ]
 }
