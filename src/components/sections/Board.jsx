@@ -35,7 +35,6 @@ export default function Board() {
         eyebrow="Organizasyon Şeması"
         title="Yönetim & İdari Kurulumuz"
         subtitle="IEEE KOÜ'yü yöneten ve komitelerimize liderlik eden ekibimizle tanışın."
-        index="02"
       />
 
       <div className="mt-14">

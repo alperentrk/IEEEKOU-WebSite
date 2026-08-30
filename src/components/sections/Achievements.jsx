@@ -8,7 +8,6 @@ export default function Achievements() {
         eyebrow="Gurur Tablomuz"
         title="Projelerimiz & Başarılarımız"
         subtitle="Üyelerimizin geliştirdiği yazılım ve donanım projeleri, TÜBİTAK destekli çalışmalarımız ve TEKNOFEST derecelerimiz."
-        index="06"
       />
 
       <div className="mt-4 grid gap-x-8 sm:grid-cols-2">

@@ -43,7 +43,6 @@ export default function Committees() {
           eyebrow="Alt Kollarımız"
           title="Komitelerimiz & Teknik Takımlarımız"
           subtitle="Farklı mühendislik alanlarında derinleşen komitelerimiz ve proje üreten teknik takımlarımızla tanışın."
-          index="03"
         />
 
         <div className="mt-14">

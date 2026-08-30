@@ -8,7 +8,6 @@ export default function Events() {
         eyebrow="Geleneksel Etkinliklerimiz"
         title="Etkinliklerimiz"
         subtitle="Yıl boyunca düzenlediğimiz, sektörü ve öğrencileri buluşturan öncü organizasyonlarımız."
-        index="04"
       />
 
       <div className="mt-4">

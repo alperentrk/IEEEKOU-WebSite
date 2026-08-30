@@ -19,7 +19,6 @@ export default function Blog({ limit, showAllLink = true }) {
           eyebrow="Medium Yazılarımız"
           title="Yayınlar"
           subtitle="Üyelerimizin teknik ve sektörel deneyimlerini paylaştığı Medium yazılarımızdan seçkiler."
-          index="05"
         />
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2">
