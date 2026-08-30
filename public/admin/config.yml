@@ -9,6 +9,27 @@ media_folder: "public/team"
 public_folder: "/team"
 
 collections:
+  - name: "gallery"
+    label: "Etkinlik Fotoğrafları"
+    files:
+      - name: "gallery"
+        label: "Kaydırmalı Foto Galerisi"
+        file: "src/data/gallery.json"
+        fields:
+          - label: "Fotoğraflar"
+            name: "images"
+            widget: "list"
+            summary: "{{caption}}"
+            fields:
+              - {
+                  label: "Fotoğraf",
+                  name: "src",
+                  widget: "image",
+                  media_folder: "public/events",
+                  public_folder: "/events",
+                }
+              - { label: "Açıklama", name: "caption", widget: "string" }
+
   - name: "about"
     label: "Hakkımızda Sayfası"
     files:
@@ -36,11 +57,6 @@ collections:
             name: "hero"
             widget: "object"
             fields:
-              - {
-                  label: "Üst Etiket",
-                  name: "kicker",
-                  widget: "string",
-                }
               - { label: "Ana Başlık", name: "headline", widget: "text" }
               - { label: "Paragraf", name: "paragraph", widget: "text" }
               - {

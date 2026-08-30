@@ -1,0 +1,10 @@
+{
+  "images": [
+    { "src": "/events/pitek.jpg", "caption": "15. PİTEK Günleri" },
+    { "src": "/events/f5-days.jpg", "caption": "F5 Days" },
+    { "src": "/events/sektor-gunleri.jpg", "caption": "Sektör Günleri" },
+    { "src": "/events/def-sum.jpg", "caption": "DEF-SUM" },
+    { "src": "/events/rover.jpg", "caption": "IEEE KOU Rover Team" },
+    { "src": "/events/iha.jpg", "caption": "IEEE KOU Technic İHA" }
+  ]
+}

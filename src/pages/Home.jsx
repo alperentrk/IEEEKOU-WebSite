@@ -1,4 +1,5 @@
 import Hero from '../components/sections/Hero'
+import Gallery from '../components/sections/Gallery'
 import About from '../components/sections/About'
 import Board from '../components/sections/Board'
 import Committees from '../components/sections/Committees'
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Gallery />
       <About />
       <Board />
       <Committees />

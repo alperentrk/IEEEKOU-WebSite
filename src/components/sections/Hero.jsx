@@ -3,11 +3,6 @@ import { hero } from '../../data/home.json'
 export default function Hero() {
   return (
     <section className="mx-auto max-w-6xl px-6 pb-16 pt-16 sm:pt-24">
-      <div className="animate-rise kicker mb-8 flex items-center gap-3">
-        <span className="h-px w-8 bg-accent" />
-        {hero.kicker}
-      </div>
-
       <h1 className="animate-rise max-w-4xl font-display text-[2.6rem] font-semibold leading-[1.05] tracking-tight text-ink sm:text-6xl lg:text-[4.5rem]">
         {hero.headline}
       </h1>
