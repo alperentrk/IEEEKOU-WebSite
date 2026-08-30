@@ -37,13 +37,18 @@ export default function JoinPage() {
               WhatsApp Topluluğumuz
             </h3>
             <p className="mt-1 text-sm leading-relaxed text-ink-dim">
-              Katılım bağlantısı, formu gönderdikten sonra çıkan onay
-              mesajında yer alıyor.
+              Formu doldurduktan sonra aşağıdaki bağlantıdan topluluğumuza
+              katılabilirsin.
             </p>
           </div>
-          <span className="kicker inline-flex items-center gap-2 border border-line px-4 py-2 text-ink-dim">
-            <BrandIcon name="whatsapp" size={15} /> Form sonrası aktif
-          </span>
+          <a
+            href={site.whatsappUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="kicker inline-flex items-center gap-2 border border-ink px-4 py-2.5 text-ink transition-colors hover:bg-ink hover:text-paper"
+          >
+            <BrandIcon name="whatsapp" size={15} /> Topluluğa Katıl
+          </a>
         </div>
       )}
     </div>
