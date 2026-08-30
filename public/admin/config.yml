@@ -1,11 +1,9 @@
-# Şimdilik yerel geliştirme için local_backend kullanılıyor (npm run cms).
-# Siteyi Netlify'a taşıdığınızda: local_backend satırını kaldırın,
-# Netlify Identity + Git Gateway'i etkinleştirin, backend.name "git-gateway" olarak kalabilir.
+# Canlı (Netlify) sürüm: Identity + Git Gateway kullanılıyor.
+# Yerelde tekrar "npm run cms" ile test etmek isterseniz "local_backend: true"
+# satırını geçici olarak geri ekleyebilirsiniz — ama canlıya bu satır olmadan çıkın.
 backend:
   name: git-gateway
   branch: main
-
-local_backend: true
 
 media_folder: "public/team"
 public_folder: "/team"
