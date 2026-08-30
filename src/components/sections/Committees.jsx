@@ -47,6 +47,21 @@ export default function Committees() {
         />
 
         <div className="mt-14">
+          <h3 className="kicker mb-2">Komitelerimiz</h3>
+          <div>
+            {committees.map((c, i) => (
+              <Row
+                key={c.slug}
+                n={String(i + 1).padStart(2, '0')}
+                title={`${c.name} — ${c.fullName}`}
+                tagline={`Öncü Etkinlik: ${c.flagshipEvent}`}
+                description={c.description}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-16">
           <h3 className="kicker mb-2">Teknik Takımlarımız</h3>
           <div>
             {technicalTeams.map((team, i) => (
@@ -57,21 +72,6 @@ export default function Committees() {
                 tagline={team.tagline}
                 description={team.description}
                 url={team.url || undefined}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-16">
-          <h3 className="kicker mb-2">Komitelerimiz</h3>
-          <div>
-            {committees.map((c, i) => (
-              <Row
-                key={c.slug}
-                n={String(i + 1).padStart(2, '0')}
-                title={`${c.name} — ${c.fullName}`}
-                tagline={`Öncü Etkinlik: ${c.flagshipEvent}`}
-                description={c.description}
               />
             ))}
           </div>
