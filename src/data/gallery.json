@@ -1,5 +1,7 @@
 {
   "images": [
+    { "src": "/events/ieee-ekibi.jpg", "caption": "IEEE KOÜ Ekibi" },
+    { "src": "/events/etkinlik-gezisi.jpg", "caption": "Etkinlik Gezimizden" },
     { "src": "/events/pitek.jpg", "caption": "15. PİTEK Günleri" },
     { "src": "/events/f5-days.jpg", "caption": "F5 Days" },
     { "src": "/events/sektor-gunleri.jpg", "caption": "Sektör Günleri" },
