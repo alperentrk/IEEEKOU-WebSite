@@ -278,6 +278,18 @@ collections:
                   public_folder: "/docs",
                   required: false,
                 }
+              - {
+                  label: "Katılım Formu Linki (Google Forms)",
+                  name: "joinFormUrl",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "WhatsApp Topluluk Linki",
+                  name: "whatsappUrl",
+                  widget: "string",
+                  required: false,
+                }
           - label: "Sosyal Medya Bağlantıları"
             name: "socialLinks"
             widget: "list"

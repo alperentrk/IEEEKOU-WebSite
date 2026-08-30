@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { hero } from '../../data/home.json'
 
 export default function Hero() {
@@ -19,12 +20,12 @@ export default function Hero() {
           >
             {hero.primaryButtonLabel}
           </a>
-          <a
-            href="#iletisim"
+          <Link
+            to="/bize-katil"
             className="border border-ink px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-ink hover:text-paper"
           >
             {hero.secondaryButtonLabel}
-          </a>
+          </Link>
         </div>
       </div>
 

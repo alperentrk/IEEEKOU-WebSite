@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import ScrollToHash from './components/ScrollToHash'
 import Home from './pages/Home'
 import BlogPage from './pages/BlogPage'
+import JoinPage from './pages/JoinPage'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/bize-katil" element={<JoinPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

@@ -34,12 +34,12 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <ThemeToggle className="border-mast-line text-mast-text hover:bg-mast-line" />
-          <a
-            href="mailto:ieee.kou.sb@gmail.com"
+          <Link
+            to="/bize-katil"
             className="bg-primary px-5 py-2.5 text-xs font-semibold uppercase tracking-widest text-white transition-colors hover:bg-primary-dim"
           >
             Bize Katıl
-          </a>
+          </Link>
         </div>
 
         <div className="flex items-center gap-2 lg:hidden">
@@ -67,12 +67,13 @@ export default function Navbar() {
               {link.label}
             </NavLink>
           ))}
-          <a
-            href="mailto:ieee.kou.sb@gmail.com"
+          <Link
+            to="/bize-katil"
+            onClick={() => setOpen(false)}
             className="my-4 bg-primary px-5 py-3 text-center text-xs font-semibold uppercase tracking-widest text-white"
           >
             Bize Katıl
-          </a>
+          </Link>
         </nav>
       )}
     </header>
